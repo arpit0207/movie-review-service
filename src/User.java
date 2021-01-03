@@ -58,9 +58,8 @@ public class User {
 	public int hashCode()
 	{
 		int result = 17;
-        result = 31 * result + uName.hashCode();
-        
-        return result;
+		result = 31 * result + uName.hashCode();
+		return result;
 	}
 	
 	boolean addMovieReviewed(String mName)

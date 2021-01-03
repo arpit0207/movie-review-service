@@ -15,12 +15,14 @@ enum Genre
 	
 	public final String label;
 
-    private Genre(String label) {
+    private Genre(String label) 
+    {
         this.label = label;
     }
     
     @Override 
-    public String toString() { 
+    public String toString() 
+    { 
         return this.label; 
     }
 }
@@ -57,9 +59,8 @@ public class Movie {
 	public int hashCode()
 	{
 		int result = 17;
-        result = 31 * result + mName.hashCode();
-        
-        return result;
+		result = 31 * result + mName.hashCode();
+		return result;
 	}
 	
 	public void addReviewForMovie(UserType uType, int rating)
